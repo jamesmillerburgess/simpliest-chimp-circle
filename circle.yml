@@ -6,7 +6,9 @@ dependencies:
     - "node_modules"
     - "~/.npm"
   override:
-    - npm install chimp
+    - npm install -g chimp
+    - mkdir empty
+    - chimp --path empty
 test:
    override:
      - chimp --mocha --path=tests
