@@ -9,7 +9,7 @@ dependencies:
     - npm install -g chimp
     - npm install -g chromedriver
     - mkdir empty
-    - chimp --path empty
+    - chimp --browser=phantomjs --path empty
 test:
    override:
      - chimp --browser=phantomjs --mocha --path=tests
