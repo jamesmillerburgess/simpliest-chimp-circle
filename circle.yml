@@ -11,4 +11,4 @@ dependencies:
     - chimp --path empty
 test:
    override:
-     - chimp --mocha --path=tests
+     - chimp --browser=phantomjs --mocha --path=tests
